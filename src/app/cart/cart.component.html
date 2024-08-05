@@ -1,0 +1,13 @@
+<div class="bg-container">
+  @for(x of totalData;track x.id){
+  <div class="card">
+    <div class="image">
+      <img src="{{ x.image }}" />
+      <div>Name:{{ x.name }}</div>
+      <div>Quantity:{{ x.quantity }}</div>
+      <div>Price:{{ x.price }}</div>
+      <div><button (click)="deleteCart(x.id)">DELETE</button></div>
+    </div>
+  </div>
+  }
+</div>

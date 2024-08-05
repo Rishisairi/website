@@ -1,0 +1,87 @@
+/* Ensure the body has no margin and uses a clean font */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Container for centering the cards and adding spacing */
+  .bg-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Style for each card */
+  .card {
+    width: 90vw;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Container for the image, ensuring it is centered and styled properly */
+  .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Styling for the image */
+  .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+  
+  /* Styling for card details */
+  .card-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Title styling */
+  .card-details h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Paragraph styling for additional info */
+  .card-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Button styling */
+  .delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    align-self: flex-start; /* Align the button to the start */
+  }
+  
+  /* Button hover effect */
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  

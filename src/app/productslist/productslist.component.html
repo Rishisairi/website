@@ -1,0 +1,8 @@
+<!-- <p>productslist works!</p> -->
+<div class="mainclass">
+  <div class="all-books-container">
+    @for(products of filteredproducts; track $index) {
+    <app-products [everyproduct]="products" [id]="products.id" />
+    }
+  </div>
+</div>

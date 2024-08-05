@@ -1,0 +1,22 @@
+<!-- <p>productdetails works!</p> -->
+<mat-card class="details">
+  <img src="{{ everyproduct.image }}" class="Image" />
+  <p class="Title">
+    Name:
+    {{ everyproduct.name }}
+  </p>
+
+  <p class="Category">
+    price:
+    {{ everyproduct.price }}
+  </p>
+
+  <p class="Ingredients">
+    {{ everyproduct.description }}
+  </p>
+  <div class="delete-and-status">
+    <mat-icon class="delete-button" color="warn" (click)="getback()"
+      >arrow_back</mat-icon
+    >
+  </div>
+</mat-card>
